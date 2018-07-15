@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
+
+const Basic = () => <div>Simple component</div>
+
+const routes = [{ path: '/basic', name: 'Basic', component: Basic }]
 
 const App = () => (
   <Router>
@@ -9,28 +13,36 @@ const App = () => (
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <h1 className="app-title">React Components Patterns</h1>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/basic">Basic</Link>
-          </li>
-        </ul>
       </header>
-      <p className="app-intro">Sample of the app.</p>
+      {renderRouterLinks(routes)}
       <div>
         <Route
           exact
           path="/"
-          component={() => <p>Select one of the examples</p>}
+          component={() => <p>Select one of the components in the menu bar</p>}
         />
-        <Route path="/basic" component={Basic} />
+        {renderRoutes(routes)}
       </div>
     </div>
   </Router>
 )
 
-const Basic = () => <div>Simple component</div>
+const renderRouterLinks = routes => (
+  <ul className="options">
+    {routes.map(route => (
+      <li key={route.path}>
+        <Link to={route.path}>{route.name}</Link>
+      </li>
+    ))}
+  </ul>
+)
+
+const renderRoutes = routes => (
+  <Fragment>
+    {routes.map(route => (
+      <Route path={route.path} key={route.path} component={route.component} />
+    ))}
+  </Fragment>
+)
 
 export default App
