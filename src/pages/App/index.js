@@ -2,10 +2,9 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
+import Stateful from '../../components/Stateful'
 
-const Basic = () => <div>Simple component</div>
-
-const routes = [{ path: '/basic', name: 'Basic', component: Basic }]
+const routes = [{ path: '/stateful', name: 'Stateful', component: Stateful }]
 
 const App = () => (
   <Router>
@@ -15,7 +14,7 @@ const App = () => (
         <h1 className="app-title">React Components Patterns</h1>
       </header>
       {renderRouterLinks(routes)}
-      <div>
+      <div className="components-container">
         <Route
           exact
           path="/"

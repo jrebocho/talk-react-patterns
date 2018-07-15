@@ -23,17 +23,19 @@ exports[`<App /> renders correctly 1`] = `
       className="options"
     >
       <li
-        key="/basic"
+        key="/stateful"
       >
         <Link
           replace={false}
-          to="/basic"
+          to="/stateful"
         >
-          Basic
+          Stateful
         </Link>
       </li>
     </ul>
-    <div>
+    <div
+      className="components-container"
+    >
       <Route
         component={[Function]}
         exact={true}
@@ -42,8 +44,8 @@ exports[`<App /> renders correctly 1`] = `
       <React.Fragment>
         <Route
           component={[Function]}
-          key="/basic"
-          path="/basic"
+          key="/stateful"
+          path="/stateful"
         />
       </React.Fragment>
     </div>

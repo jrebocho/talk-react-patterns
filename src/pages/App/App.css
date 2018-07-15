@@ -36,6 +36,12 @@ ul li {
   padding: 8px;
 }
 
+.components-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes app-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
