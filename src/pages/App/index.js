@@ -4,6 +4,7 @@ import logo from './logo.svg'
 import './App.css'
 import Stateful from '../../components/Stateful'
 import Stateless from '../../components/Stateless'
+import StateContainer from '../../containers/StateContainer'
 
 const StatelessOn = () => <Stateless on={true} />
 
@@ -18,6 +19,11 @@ const routes = [
     path: '/stateless-on',
     name: 'Stateless On',
     component: StatelessOn
+  },
+  {
+    path: '/state-container',
+    name: 'State Container',
+    component: StateContainer
   }
 ]
 

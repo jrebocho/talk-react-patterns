@@ -52,6 +52,16 @@ exports[`<App /> renders correctly 1`] = `
           Stateless On
         </Link>
       </li>
+      <li
+        key="/state-container"
+      >
+        <Link
+          replace={false}
+          to="/state-container"
+        >
+          State Container
+        </Link>
+      </li>
     </ul>
     <div
       className="components-container"
@@ -76,6 +86,11 @@ exports[`<App /> renders correctly 1`] = `
           component={[Function]}
           key="/stateless-on"
           path="/stateless-on"
+        />
+        <Route
+          component={[Function]}
+          key="/state-container"
+          path="/state-container"
         />
       </React.Fragment>
     </div>
