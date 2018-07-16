@@ -3,8 +3,23 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
 import Stateful from '../../components/Stateful'
+import Stateless from '../../components/Stateless'
 
-const routes = [{ path: '/stateful', name: 'Stateful', component: Stateful }]
+const StatelessOn = () => <Stateless on={true} />
+
+const routes = [
+  { path: '/stateful', name: 'Stateful', component: Stateful },
+  {
+    path: '/stateless-off',
+    name: 'Stateless Off',
+    component: Stateless
+  },
+  {
+    path: '/stateless-on',
+    name: 'Stateless On',
+    component: StatelessOn
+  }
+]
 
 const App = () => (
   <Router>
