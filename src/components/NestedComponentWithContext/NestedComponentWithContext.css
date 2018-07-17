@@ -1,0 +1,25 @@
+.outer-box {
+  width: 280px;
+  height: 180px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.green {
+  background-color: green;
+  color: yellow;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.yellow {
+  background-color: yellow;
+  padding: 40px;
+}

@@ -8,6 +8,7 @@ import StateContainer from '../../containers/StateContainer'
 import BlueClick from '../../components/BlueClick'
 import OtherBlueClick from '../../components/OtherBlueClick'
 import NestedComponent from '../../components/NestedComponent'
+import NestedComponentWithContext from '../../components/NestedComponentWithContext'
 
 const StatelessOn = () => <Stateless on={true} />
 
@@ -42,6 +43,11 @@ const routes = [
     path: '/nested-component',
     name: 'Nested Component',
     component: NestedComponent
+  },
+  {
+    path: '/nested-component-with-context',
+    name: 'Nested Component With Context',
+    component: NestedComponentWithContext
   }
 ]
 
