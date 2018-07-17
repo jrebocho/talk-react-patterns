@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SwitchWithContext /> renders correctly 1`] = `
+<[object Object]
+  value={
+    Object {
+      "on": false,
+    }
+  }
+>
+  <div
+    className="outer-box red"
+    onClick={[Function]}
+  >
+    <YellowBox />
+  </div>
+</[object Object]>
+`;
+
+exports[`<SwitchWithContext /> when the component is clicked renders correctly 1`] = `
+<[object Object]
+  value={
+    Object {
+      "on": false,
+    }
+  }
+>
+  <div
+    className="outer-box red"
+    onClick={[Function]}
+  >
+    <YellowBox />
+  </div>
+</[object Object]>
+`;

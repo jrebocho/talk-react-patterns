@@ -2,52 +2,45 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
-import Stateful from '../../components/Stateful'
-import Stateless from '../../components/Stateless'
-import StateContainer from '../../containers/StateContainer'
-import BlueClick from '../../components/BlueClick'
-import OtherBlueClick from '../../components/OtherBlueClick'
-import NestedComponent from '../../components/NestedComponent'
-import NestedComponentWithContext from '../../components/NestedComponentWithContext'
-
-const StatelessOn = () => <Stateless on={true} />
+import StatefulSwitch from '../../components/StatefulSwitch'
+import StatelessSwitch from '../../components/StatelessSwitch'
+import SwitchContainer from '../../containers/SwitchContainer'
+import SwitchWithHOC from '../../components/SwitchWithHOC'
+import SwitchWithRenderProp from '../../components/SwitchWithRenderProp'
+import NestedSwitch from '../../components/NestedSwitch'
+import SwitchWithContext from '../../components/SwitchWithContext'
 
 const routes = [
-  { path: '/stateful', name: 'Stateful', component: Stateful },
+  { path: '/stateful', name: 'Stateful', component: StatefulSwitch },
   {
     path: '/stateless-off',
     name: 'Stateless Off',
-    component: Stateless
-  },
-  {
-    path: '/stateless-on',
-    name: 'Stateless On',
-    component: StatelessOn
+    component: StatelessSwitch
   },
   {
     path: '/state-container',
     name: 'State Container',
-    component: StateContainer
+    component: SwitchContainer
   },
   {
-    path: '/with-blue-click-hoc',
-    name: 'With BlueClickHOC',
-    component: BlueClick
+    path: '/switch-with-hoc',
+    name: 'With HOC',
+    component: SwitchWithHOC
   },
   {
-    path: '/blue-click-with-render-prop',
+    path: '/switch-with-render-prop',
     name: 'With Render Prop',
-    component: OtherBlueClick
+    component: SwitchWithRenderProp
   },
   {
     path: '/nested-component',
     name: 'Nested Component',
-    component: NestedComponent
+    component: NestedSwitch
   },
   {
     path: '/nested-component-with-context',
-    name: 'Nested Component With Context',
-    component: NestedComponentWithContext
+    name: 'With Context',
+    component: SwitchWithContext
   }
 ]
 
@@ -56,14 +49,16 @@ const App = () => (
     <div className="app">
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
-        <h1 className="app-title">React Components Patterns</h1>
+        <h1 className="app-title">React Components Patterns Examples</h1>
       </header>
       {renderRouterLinks(routes)}
       <div className="components-container">
         <Route
           exact
           path="/"
-          component={() => <p>Select one of the components in the menu bar</p>}
+          component={() => (
+            <p>Select one of the switch components in the menu bar</p>
+          )}
         />
         {renderRoutes(routes)}
       </div>

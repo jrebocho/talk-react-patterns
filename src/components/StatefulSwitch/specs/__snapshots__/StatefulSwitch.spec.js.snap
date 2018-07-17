@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StatefulSwitch /> renders correctly 1`] = `
+<div
+  onClick={[Function]}
+>
+  <div
+    className="box red"
+  >
+    OFF
+  </div>
+</div>
+`;
+
+exports[`<StatefulSwitch /> when the component is clicked renders correctly 1`] = `
+<div
+  onClick={[Function]}
+>
+  <div
+    className="box green"
+  >
+    ON
+  </div>
+</div>
+`;
+
+exports[`<StatefulSwitch /> when the component is on renders correctly 1`] = `
+<div
+  onClick={[Function]}
+>
+  <div
+    className="box green"
+  >
+    ON
+  </div>
+</div>
+`;

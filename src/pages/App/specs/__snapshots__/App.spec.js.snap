@@ -16,7 +16,7 @@ exports[`<App /> renders correctly 1`] = `
       <h1
         className="app-title"
       >
-        React Components Patterns
+        React Components Patterns Examples
       </h1>
     </header>
     <ul
@@ -43,16 +43,6 @@ exports[`<App /> renders correctly 1`] = `
         </Link>
       </li>
       <li
-        key="/stateless-on"
-      >
-        <Link
-          replace={false}
-          to="/stateless-on"
-        >
-          Stateless On
-        </Link>
-      </li>
-      <li
         key="/state-container"
       >
         <Link
@@ -63,21 +53,21 @@ exports[`<App /> renders correctly 1`] = `
         </Link>
       </li>
       <li
-        key="/with-blue-click-hoc"
+        key="/switch-with-hoc"
       >
         <Link
           replace={false}
-          to="/with-blue-click-hoc"
+          to="/switch-with-hoc"
         >
-          With BlueClickHOC
+          With HOC
         </Link>
       </li>
       <li
-        key="/blue-click-with-render-prop"
+        key="/switch-with-render-prop"
       >
         <Link
           replace={false}
-          to="/blue-click-with-render-prop"
+          to="/switch-with-render-prop"
         >
           With Render Prop
         </Link>
@@ -90,6 +80,16 @@ exports[`<App /> renders correctly 1`] = `
           to="/nested-component"
         >
           Nested Component
+        </Link>
+      </li>
+      <li
+        key="/nested-component-with-context"
+      >
+        <Link
+          replace={false}
+          to="/nested-component-with-context"
+        >
+          With Context
         </Link>
       </li>
     </ul>
@@ -114,28 +114,28 @@ exports[`<App /> renders correctly 1`] = `
         />
         <Route
           component={[Function]}
-          key="/stateless-on"
-          path="/stateless-on"
-        />
-        <Route
-          component={[Function]}
           key="/state-container"
           path="/state-container"
         />
         <Route
           component={[Function]}
-          key="/with-blue-click-hoc"
-          path="/with-blue-click-hoc"
+          key="/switch-with-hoc"
+          path="/switch-with-hoc"
         />
         <Route
           component={[Function]}
-          key="/blue-click-with-render-prop"
-          path="/blue-click-with-render-prop"
+          key="/switch-with-render-prop"
+          path="/switch-with-render-prop"
         />
         <Route
           component={[Function]}
           key="/nested-component"
           path="/nested-component"
+        />
+        <Route
+          component={[Function]}
+          key="/nested-component-with-context"
+          path="/nested-component-with-context"
         />
       </React.Fragment>
     </div>

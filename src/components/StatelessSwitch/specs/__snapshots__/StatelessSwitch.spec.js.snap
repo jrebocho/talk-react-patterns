@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StatelessSwitch /> renders correctly 1`] = `
+<div
+  className="box red"
+>
+  OFF
+</div>
+`;
+
+exports[`<StatelessSwitch /> when the component is on renders correctly 1`] = `
+<div
+  className="box green"
+>
+  ON
+</div>
+`;
