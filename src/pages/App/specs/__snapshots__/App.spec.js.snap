@@ -62,6 +62,16 @@ exports[`<App /> renders correctly 1`] = `
           State Container
         </Link>
       </li>
+      <li
+        key="/with-blue-click-hoc"
+      >
+        <Link
+          replace={false}
+          to="/with-blue-click-hoc"
+        >
+          With BlueClickHOC
+        </Link>
+      </li>
     </ul>
     <div
       className="components-container"
@@ -91,6 +101,11 @@ exports[`<App /> renders correctly 1`] = `
           component={[Function]}
           key="/state-container"
           path="/state-container"
+        />
+        <Route
+          component={[Function]}
+          key="/with-blue-click-hoc"
+          path="/with-blue-click-hoc"
         />
       </React.Fragment>
     </div>

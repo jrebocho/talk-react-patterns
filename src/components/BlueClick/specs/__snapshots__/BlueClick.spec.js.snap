@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlueClick /> renders correctly 1`] = `
+<div
+  className="blue-box"
+  onClick={[Function]}
+>
+  <Stateless
+    on={false}
+  />
+</div>
+`;

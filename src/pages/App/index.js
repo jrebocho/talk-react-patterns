@@ -5,6 +5,7 @@ import './App.css'
 import Stateful from '../../components/Stateful'
 import Stateless from '../../components/Stateless'
 import StateContainer from '../../containers/StateContainer'
+import BlueClick from '../../components/BlueClick'
 
 const StatelessOn = () => <Stateless on={true} />
 
@@ -24,6 +25,11 @@ const routes = [
     path: '/state-container',
     name: 'State Container',
     component: StateContainer
+  },
+  {
+    path: '/with-blue-click-hoc',
+    name: 'With BlueClickHOC',
+    component: BlueClick
   }
 ]
 
