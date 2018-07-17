@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NestedComponent /> renders correctly 1`] = `
+<div
+  className="outer-box red"
+  onClick={[Function]}
+>
+  <YellowBox
+    on={false}
+  />
+</div>
+`;
+
+exports[`<NestedComponent /> when the component is clicked renders correctly 1`] = `
+<div
+  className="outer-box green"
+  onClick={[Function]}
+>
+  <YellowBox
+    on={true}
+  />
+</div>
+`;

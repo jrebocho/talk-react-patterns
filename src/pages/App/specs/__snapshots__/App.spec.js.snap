@@ -82,6 +82,16 @@ exports[`<App /> renders correctly 1`] = `
           With Render Prop
         </Link>
       </li>
+      <li
+        key="/nested-component"
+      >
+        <Link
+          replace={false}
+          to="/nested-component"
+        >
+          Nested Component
+        </Link>
+      </li>
     </ul>
     <div
       className="components-container"
@@ -121,6 +131,11 @@ exports[`<App /> renders correctly 1`] = `
           component={[Function]}
           key="/blue-click-with-render-prop"
           path="/blue-click-with-render-prop"
+        />
+        <Route
+          component={[Function]}
+          key="/nested-component"
+          path="/nested-component"
         />
       </React.Fragment>
     </div>

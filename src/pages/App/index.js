@@ -7,6 +7,7 @@ import Stateless from '../../components/Stateless'
 import StateContainer from '../../containers/StateContainer'
 import BlueClick from '../../components/BlueClick'
 import OtherBlueClick from '../../components/OtherBlueClick'
+import NestedComponent from '../../components/NestedComponent'
 
 const StatelessOn = () => <Stateless on={true} />
 
@@ -36,6 +37,11 @@ const routes = [
     path: '/blue-click-with-render-prop',
     name: 'With Render Prop',
     component: OtherBlueClick
+  },
+  {
+    path: '/nested-component',
+    name: 'Nested Component',
+    component: NestedComponent
   }
 ]
 
