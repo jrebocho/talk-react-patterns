@@ -72,6 +72,16 @@ exports[`<App /> renders correctly 1`] = `
           With BlueClickHOC
         </Link>
       </li>
+      <li
+        key="/blue-click-with-render-prop"
+      >
+        <Link
+          replace={false}
+          to="/blue-click-with-render-prop"
+        >
+          With Render Prop
+        </Link>
+      </li>
     </ul>
     <div
       className="components-container"
@@ -106,6 +116,11 @@ exports[`<App /> renders correctly 1`] = `
           component={[Function]}
           key="/with-blue-click-hoc"
           path="/with-blue-click-hoc"
+        />
+        <Route
+          component={[Function]}
+          key="/blue-click-with-render-prop"
+          path="/blue-click-with-render-prop"
         />
       </React.Fragment>
     </div>

@@ -6,6 +6,7 @@ import Stateful from '../../components/Stateful'
 import Stateless from '../../components/Stateless'
 import StateContainer from '../../containers/StateContainer'
 import BlueClick from '../../components/BlueClick'
+import OtherBlueClick from '../../components/OtherBlueClick'
 
 const StatelessOn = () => <Stateless on={true} />
 
@@ -30,6 +31,11 @@ const routes = [
     path: '/with-blue-click-hoc',
     name: 'With BlueClickHOC',
     component: BlueClick
+  },
+  {
+    path: '/blue-click-with-render-prop',
+    name: 'With Render Prop',
+    component: OtherBlueClick
   }
 ]
 

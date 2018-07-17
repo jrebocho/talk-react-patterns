@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OtherBlueClick /> renders correctly 1`] = `
+<BlueClickRenderProp
+  render={[Function]}
+/>
+`;

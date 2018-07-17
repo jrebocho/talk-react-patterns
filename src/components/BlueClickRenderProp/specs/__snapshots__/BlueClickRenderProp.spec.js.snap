@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlueClickRenderProp /> renders correctly 1`] = `
+<div
+  className="blue-box"
+  onClick={[Function]}
+>
+  <TestComponent
+    on={false}
+  />
+</div>
+`;
