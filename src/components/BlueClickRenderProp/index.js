@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './BlueClickRenderProp.css'
+import PropTypes from 'prop-types'
 
 class BlueClickRenderProp extends Component {
   constructor(props) {
@@ -21,6 +22,10 @@ class BlueClickRenderProp extends Component {
       </div>
     )
   }
+}
+
+BlueClickRenderProp.propTypes = {
+  render: PropTypes.func.isRequired
 }
 
 export default BlueClickRenderProp
